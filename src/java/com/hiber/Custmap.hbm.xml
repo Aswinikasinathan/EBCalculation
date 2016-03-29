@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hiber.Customer_det" table="CUSTOMER_DET">
+        <id name="id" column="ID" type="integer">
+            <generator class="increment"/>
+        </id>
+        <property name="uname" column="UNAME" type="string"/>
+        <property name="pwd" column="PWD" type="string"/>
+        <property name="address" column="ADDRESS" type="string"/>
+        <property name="no_of_units" column="NO_OFUNITS" type="integer"/>
+        <property name="amount" column="AMOUNT" type="integer"/>
+    </class>
+ 
+</hibernate-mapping>
